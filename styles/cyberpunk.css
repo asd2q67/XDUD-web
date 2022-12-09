@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'Cyberpunk';
+    src: url(../font/Cyberpunk/Cyberpunk.ttf);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Permanent Marker', cursive;
+    list-style: none;
+    text-decoration: none;
+    color: #010013;
+}
+.background img{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+body {
+    background-image: radial-gradient(#f1e901 1%, #fff800 99%);
+}
+header {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+header a h1 {
+    font-size: 36px;
+    font-weight: bold;
+    position: absolute;
+    left: 160px;
+}
+header nav ul {
+    display: flex;
+}
+header nav ul li {
+    padding-top: 20px;
+    display: inline-block;
+}
+header nav ul li a {
+    margin-right: 20px;
+    border-bottom: 2px solid transparent;
+    transition: .4s;
+}
+header nav ul li a:hover,
+header nav ul li a:focus {
+    border-bottom: 2px solid #2f3640;
+}
+header nav ul li.active a {
+    border-bottom: 2px solid #2f3640;
+}
+header nav ul p {
+    margin: 17px;
+    padding: 3px;
+    border: 2px solid #2f3640;
+    border-radius: 20px;
+}
+header nav ul p:hover,
+header nav ul p:focus {
+    background: white;
+}
+.details {
+    margin-top: 100px;
+    margin-left: 160px;
+}
+.details h5 {
+    margin-bottom: 40px;
+}
+.details h1 {
+    line-height: 60px;
+    font-size: 72px;
+}
+.details span {
+    font-size: 32px;
+    font-weight: lighter;
+    font-style: italic;
+    font-stretch:extra-expanded;
+    margin-left: 300px;
+}
+.details p {
+    padding: 50px 0;
+}
+.details a {
+    border: 2px solid #2f3640;
+    padding: 3px;
+    margin-right: 50px;
+    border-radius: 20px;
+}
+.details a:hover,
+.details a:focus {
+    background: white;
+}
+.content-pic img {
+    bottom: 0;
+    left: 40%;
+    position: absolute;
+    max-width: 1000px;
+    z-index: -1;
+}
+.content-pic h1, sub {
+    bottom: 10%;
+    left: 50%;
+    position: absolute;
+}
+.content-pic h1 {
+    font-size: 72px;
+    margin-left: 0px;
+    color: #f9ca24
+}
+.content-pic sub {
+    bottom: 8%;
+    margin-left: 300px;
+    color: #54a0ff;
+    font-size: 32px;
+    line-height: 16px;
+}
+.social {
+    margin-top: 100px;
+    margin-left: 160px;
+}

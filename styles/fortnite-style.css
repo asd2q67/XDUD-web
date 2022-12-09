@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Permanent Marker', cursive;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-image: radial-gradient(#f6e58d 1%, #ff9f43ed 99%);
+}
+a, h4, h3, h1 {
+    color: #2f3640;
+}
+header {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+header a h1 {
+    font-size: 36px;
+    font-weight: bold;
+    position: absolute;
+    left: 160px;
+}
+header nav ul {
+    display: flex;
+}
+header nav ul li {
+    padding-top: 20px;
+    display: inline-block;
+}
+header nav ul li a {
+    margin-right: 20px;
+    border-bottom: 2px solid transparent;
+    transition: .4s;
+}
+header nav ul li a:hover,
+header nav ul li a:focus {
+    border-bottom: 2px solid #2f3640;
+}
+header nav ul li.active a {
+    border-bottom: 2px solid #2f3640;
+}
+header nav ul p {
+    margin: 17px;
+    padding: 3px;
+    border: 2px solid #2f3640;
+    border-radius: 20px;
+}
+header nav ul p:hover,
+header nav ul p:focus {
+    background: white;
+}
+main .details {
+    margin-top: 100px;
+    margin-left: 160px;
+}
+main .details h5 {
+    margin-bottom: 40px;
+}
+main .details h1 {
+    line-height: 60px;
+    font-size: 72px;
+}
+main .details p {
+    padding: 50px 0;
+}
+main .details a {
+    border: 2px solid #2f3640;
+    padding: 3px;
+    margin-right: 50px;
+    border-radius: 20px;
+}
+main .details a:hover,
+main .details a:focus {
+    background: white;
+}
+.content-pic img {
+    bottom: 0;
+    left: 40%;
+    position: absolute;
+    max-width: 900px;
+}
+.social {
+    margin-top: 100px;
+    margin-left: 160px;
+}
