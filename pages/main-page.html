@@ -4,9 +4,222 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main-page.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="../scripts/main-page.js"></script>
     <title>Main page</title>
 </head>
 <body>
+    <header>
+        <a href="#" class="logo">Tanoshi Games</a>
+        <ul class="nav-bar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Tournaments</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="action">
+            <div class="searchBx">
+                <a href="#"><i class='bx bx-search'></i></a>
+                <input type="text" placeholder="Search Games">
+            </div>
+        </div>      
+    </header> 
     
+    <!-- Home Banner -->
+    <div class="banner">
+        <div class="bg">
+            <div class="content">
+                <h2>Home for<br>
+                    Gammers</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, non? Sed provident temporibus illum molestias, esse, praesentium culpa deleniti optio natus quos tempora, earum perferendis aspernatur delectus nesciunt. Et, quam!</p>
+                <a href="#" class="btn">Join Now</a>
+            </div>
+            <img src="../pictures/cyberpunk.png">
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="about">
+        <div class="contentBx">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo recusandae placeat error obcaecati omnis maiores nemo dicta excepturi amet corporis. Adipisci tenetur quia iste dolor cumque ratione pariatur ipsam minima. 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti est nam, consectetur ratione libero quis nostrum doloremque sint labore ad quod, cupiditate consequuntur perferendis sapiente, reiciendis nihil vitae delectus illo?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, laborum quia doloremque dolorum voluptatum cupiditate itaque, vel, laboriosam vero cum recusandae delectus hic. Doloribus aperiam enim aut tenetur quam repellat!
+            </p>
+            <a href="#">Read more</a>
+        </div>
+        <img src="../pictures/gamers.jpg">
+    </div>
+
+    <!-- Games -->
+    <div class="games">
+        <h2>Popular Games</h2>
+        <ul>
+            <li class="list active" data-filter="all">All</li>
+            <li class="list" data-filter="pc">PC Games</li>
+            <li class="list" data-filter="Console">Console Games</li>
+        </ul>
+        <div class="cardBx">
+            <div class="card" id="card1" data-item="pc">
+                <img src="../pictures/fortnite-card.jpg">
+                <div class="content">
+                    <h3>Fontnite</h3>
+                    <h4>Rating:</h4>
+                    <div class="rating-bar"><span></span></div>
+                    <div class="info">
+                        <p>Price<br><span>$19.99</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="card2" data-item="pc">
+                <img src="../pictures/valorant-card.jpg">
+                <div class="content">
+                    <h3>Valorant</h3>
+                    <h4>Rating:</h4>
+                    <div class="rating-bar"><span></span></div>
+                    <div class="info">
+                        <p>Price<br><span>FREE</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="card3" data-item="pc">
+                <img src="../pictures/league-card.jpg">
+                <div class="content">
+                    <h3>League of Legends</h3>
+                    <h4>Rating:</h4>
+                    <div class="rating-bar"><span></span></div>
+                    <div class="info">
+                        <p>Price<br><span>FREE</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="card4" data-item="Console">
+                <img src="../pictures/cyberpunk-card.jpg">
+                <div class="content">
+                    <h3>Cyberpunk 2077</h3>
+                    <h4>Rating:</h4>
+                    <div class="rating-bar"><span></span></div>
+                    <div class="info">
+                        <p>Price<br><span>$49.99</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="card5" data-item="Console">
+                <img src="../pictures/zelda-card.jpg">
+                <div class="content">
+                    <h3>Legend of Zelda</h3>
+                    <h4>Rating:</h4>
+                    <div class="rating-bar"><span></span></div>
+                    <div class="info">
+                        <p>Price<br><span>$39.99</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="card6" data-item="Console">
+                <img src="../pictures/pokemon-card.jpg">
+                <div class="content">
+                    <h3>Pokemon Scarlet & Violet</h3>
+                    <h4>Rating:</h4>
+                    <div class="rating-bar"><span></span></div>
+                    <div class="info">
+                        <p>Price<br><span>$49.99</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tournaments -->
+    <div class="tournaments">
+        <h2>Live Tournaments</h2>
+        <div class="boxBx">
+            <div class="box">
+                <img src="../pictures/league-post.jfif">
+                <div class="content">
+                    <h4><span>300.000</span> Player are playing..</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quod doloribus, hic fugiat consequuntur voluptatum amet tempore doloremque aperiam ipsam id harum nisi sapiente adipisci facere,
+                        voluptate quas recusandae iste? Eaque.
+                    </p>
+                    <div class="btn">
+                        <a href="#" class="watch">Watch</a>
+                        <a href="#" class="join">Join Now</a>
+                    </div>                           
+                </div>
+            </div>
+            <div class="box">
+                <img src="../pictures/valorant-post.jpg">
+                <div class="content">
+                    <h4><span>500.000</span> Player are playing..</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quod doloribus, hic fugiat consequuntur voluptatum amet tempore doloremque aperiam ipsam id harum nisi sapiente adipisci facere,
+                        voluptate quas recusandae iste? Eaque.
+                    </p>
+                    <div class="btn">
+                        <a href="#" class="watch">Watch</a>
+                        <a href="#" class="join">Join Now</a>
+                    </div>                           
+                </div>
+            </div>
+            <div class="box">
+                <img src="../pictures/pokemon-post.jpg">
+                <div class="content">
+                    <h4><span>20.000</span> Player are playing..</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quod doloribus, hic fugiat consequuntur voluptatum amet tempore doloremque aperiam ipsam id harum nisi sapiente adipisci facere,
+                        voluptate quas recusandae iste? Eaque.
+                    </p>
+                    <div class="btn">
+                        <a href="#" class="watch">Watch</a>
+                        <a href="#" class="join">Join Now</a>
+                    </div>                           
+                </div>
+            </div>
+            <div class="box">
+                <img src="../pictures/fortnite-post.jpg">
+                <div class="content">
+                    <h4><span>50.000</span> Player are playing..</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quod doloribus, hic fugiat consequuntur voluptatum amet tempore doloremque aperiam ipsam id harum nisi sapiente adipisci facere,
+                        voluptate quas recusandae iste? Eaque.
+                    </p>
+                    <div class="btn">
+                        <a href="#" class="watch">Watch</a>
+                        <a href="#" class="join">Join Now</a>
+                    </div>                           
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contacts -->
+    <div class="contact">
+        <img src="../pictures/contact.png">
+        <div class="form">
+            <h1>Contact Us</h1>
+            <div class="inputBx">
+                <p>Enter Name</p>
+                <input type="text" placeholder="Full name">
+            </div>
+            <div class="inputBx">
+                <p>Enter Email</p>
+                <input type="text" placeholder="Full name">
+            </div>
+            <div class="inputBx">
+                <p>Message</p>
+                <textarea placeholder="Type here..."></textarea>
+            </div>
+            <div class="inputBx">
+                <input type="submit" name="Submit">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
