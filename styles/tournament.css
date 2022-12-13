@@ -25,10 +25,6 @@ header {
     background: #1E1F26;
     z-index: 100;
 }
-.scroll-change {
-    background: #5c6177;
-    box-shadow: 0 5px 10px #5c6177;
-}
 /* scroll bar */
 ::-webkit-scrollbar {
     width: 12px;
@@ -56,7 +52,7 @@ header .list:hover {
 }
 header .list .dropdown {
     position: absolute;
-    top: -30px;
+    top: -40px;
     left: 65%;
     display: none;
 }
