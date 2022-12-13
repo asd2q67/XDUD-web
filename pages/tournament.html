@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/tournament.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../scripts/tournament.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Tournaments</title>
 </head>
@@ -36,18 +38,16 @@
     <main>
         <h1>Tournament<i class='bx bxs-hot'></i><i class='bx bxs-hot'></i><i class='bx bxs-hot'></i></h1>
         <h2>Welcome to Tournament Section!!</h2>
-        <div class="box">   
-            <div class="content">
-                <img src="../pictures/worlds-2022.png">
-                <span>Worlds 2022</span>
-            </div>
-            <div class="content">
-                <img src="../pictures/vcs.png">
-                <span>VCS 2022</span>
-            </div>
-            <div class="content">
-                <img src="../pictures/Valorant-2022.png">
-                <span>VALORANT Champions 2022</span>
+        <div class="slider">
+            <div class="slider-outer">
+                <img src="../pictures/arrow-left.svg.png" class="prev">
+                    <div class="slider-inner">
+                        <img src="../pictures/worlds-2022.png" class="active">
+                        <img src="../pictures/Valorant-2022.png">
+                        <img src="../pictures/vcs.png">
+                        <img src="../pictures/pokemon.png">
+                    </div>
+                <img src="../pictures/arrow-right.svg.png" class="next">
             </div>
         </div>
     </main>

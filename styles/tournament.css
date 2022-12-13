@@ -74,34 +74,53 @@ main {
     background: url(../pictures/versus.jpg);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 main i, h1 {
     font-size: 42px;
     color: red;
 }
-main .box {
-    padding: 100px 0;
-    width: 100%;
-    min-height: 100%;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
+main .slider {
+    position: absolute;
+    top: 20%;
+    right: 7%;
+    width: 900px;
+    margin: 40px 50px;
+    overflow: auto;
 }
-main .box .content {
-    display: flex;
-    flex-direction: column;
-    width: 540px;
-    height: 400px;
-    margin: 20px 40px;
+main .slider .slider-outer {
+    width: 800px;
+}
+main .slider .slider-outer .slider-inner {
+    float: left;
+    width: 700px;
+    position: relative;
     overflow: hidden;
+    padding: 3px;
+    border: 1px solid #222;
 }
-main .box .content img {
-    height: 200px;
-    object-fit: cover;
+main .slider .slider-outer .slider-inner img {
+    display: none;
+    width: 700px;
+}
+main .slider .slider-outer .slider-inner img.active {
+    display: inline-block;
+}
+.prev,.next {
+    float: left;
+    width: 50px;
+    margin-top: 160px;
+    cursor: pointer;
+}
+.prev {
+    position: relative;
+    margin-right: -45px;
+    z-index: 100;
+}
+.next {
+    position: relative;
+    margin-left: -45px;
+    z-index: 100;
 }
 .video {
     width: 100%;
