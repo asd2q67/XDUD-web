@@ -1,29 +1,42 @@
-// NavBar
-window.addEventListener('scroll',function(){
-    var header = document.querySelector('header');
-    header.classList.toggle('scroll-change',window.scrollY > 0)
-});
-//Filter Cards
-// let list = document.querySelectorAll('.list');
-// let card = document.querySelectorAll('.card');
+filterSelection('all')
 
-// for(let i = 0; i<list.length; i++){
-//     list[i].addEventListener('click',function(){
-//         for(let j=0; j<list.length; j++){
-//             list[j].classList.remove('active');
-//         }
-//         this.classList.add('active');
+function filterSelection(c) {
+    console.log(c);
+    var x,i;
+    x=document.getElementsByClassName('card');
+    
+    for(i=0; i<x.length; i++){
+        removeCard(x[i], "hide")
+        if(x[i].className.indexOf(c) >-1) addCard(x[i],"hide")
+        console.log(x[i].className);
+    }
 
-//         let dataFilter = this.getAttribute('data-filter');
+}
 
-//         for(let k=0; k<card.length;k++){
-//             card[k].classList.remove('active');
-//             card[k].classList.add('hide');
+function addCard(element,name)
+{
+    var i,arr1,arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for(i=0; i<arr2.length; i++){
+        if(arr1.indexOf(arr2[i]) ==-1 )
+        {
+            element.className += " " + arr2[i];
+        }
+    }
 
-//             if(card[k].getAttribute('data-item') == dataFilter || dataFilter == 'all'){
-//                 card[k].classList.remove('hide');
-//                 card[k].classList.add('active');
-//             }
-//         }
-//     });
-// }
+}
+
+function removeCard(element,name){
+    var i,arr1,arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i=0; i < arr2.length; i++){
+        while(arr1.indexOf(arr2[i]) > -1)
+        {
+            arr1.splice(arr1.indexOf(arr2[i]), 1)
+        }
+    }
+
+    element.className = arr1.join(" ");
+}

@@ -56,13 +56,13 @@
     <!-- Games -->
     <div class="games">
         <h2>Popular Games</h2>
-        <ul>
-            <li class="list active" data-filter="all">All</li>
-            <li class="list" data-filter="pc">PC Games</li>
-            <li class="list" data-filter="Console">Console Games</li>
-        </ul>
+        <div class="ul">
+            <button class="li button active" onclick="filterSelection('all')">All Games</button>
+            <button class="li button " onclick="filterSelection('Console')">Console</button>
+            <button class="li button " onclick="filterSelection('pc')">PC</button>
+        </div>
         <div class="cardBx">
-            <div class="card" id="card1" data-item="pc">
+            <div class="card pc" id="card1" data-item="pc">
                 <img src="../pictures/fortnite-card.jpg">
                 <div class="content">
                     <h3>Fontnite</h3>
@@ -74,7 +74,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card" id="card2" data-item="pc">
+            <div class="card pc" id="card2" data-item="pc">
                 <img src="../pictures/valorant-card.jpg">
                 <div class="content">
                     <h3>Valorant</h3>
@@ -86,7 +86,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card" id="card3" data-item="pc">
+            <div class="card pc" id="card3" data-item="pc">
                 <img src="../pictures/league-card.jpg">
                 <div class="content">
                     <h3>League of Legends</h3>
@@ -98,7 +98,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card" id="card4" data-item="Console">
+            <div class="card Console" id="card4" data-item="Console">
                 <img src="../pictures/cyberpunk-card.jpg">
                 <div class="content">
                     <h3>Cyberpunk 2077</h3>
@@ -110,7 +110,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card" id="card5" data-item="Console">
+            <div class="card Console" id="card5" data-item="Console">
                 <img src="../pictures/zelda-card.jpg">
                 <div class="content">
                     <h3>Legend of Zelda</h3>
@@ -122,7 +122,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card" id="card6" data-item="Console">
+            <div class="card Console" id="card6" data-item="Console">
                 <img src="../pictures/pokemon-card.jpg">
                 <div class="content">
                     <h3>Pokemon Scarlet & Violet</h3>

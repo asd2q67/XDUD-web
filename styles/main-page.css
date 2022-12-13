@@ -195,8 +195,9 @@ header .action .searchBx input {
 }
 .games h2 {
     margin: 10px 0;
+    
 }
-.games ul {
+.games .ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,16 +205,21 @@ header .action .searchBx input {
 
     margin-bottom: 20px;
 }
-.games ul li {
+.games .ul .li {
     padding: 10px 20px;
     border-radius: 5px;
     margin: 5px;
 
     letter-spacing: 1px;
     cursor: pointer;
-    color: white;
+    color:#23242a;
 }
-.games ul li.active {
+
+.games .ul button:hover{
+    background: lightskyblue;
+}
+
+.games .ul .button .active {
     background: lightskyblue;
     color: #23242a;
     box-shadow: 0 0 10px lightskyblue;
@@ -222,11 +228,18 @@ header .action .searchBx input {
     width: 100%;
     min-height: 100%;
 
+    float: left;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
+
+.hide {
+    display: none;
+
+  }
+
 .games .cardBx .card {
     width: 280px;
     border-radius: 10px;
