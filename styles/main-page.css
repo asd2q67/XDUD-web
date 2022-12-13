@@ -69,10 +69,6 @@ header .dropDown{
 header li:hover ul.dropDown{
     display: block  ;
 }
-.scroll-change {
-    background: #2d3a87;
-    box-shadow: 0 5px 10px #2d3a87;
-}
 /* scroll bar */
 ::-webkit-scrollbar {
     width: 12px;
