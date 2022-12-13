@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Permanent Marker', cursive;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 15%;
+    height: 100vh;
+    padding: 7px 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: 0.5s;
+    border: 1px solid lightskyblue;
+    background: #1E1F26;
+    z-index: 100;
+}
+.scroll-change {
+    background: #5c6177;
+    box-shadow: 0 5px 10px #5c6177;
+}
+/* scroll bar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-thumb {
+    background: lightskyblue;
+    border-radius: 5px;
+}
+header .logo {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 700;
+}
+header ul {
+    margin: 40px 0;
+}
+header .list {
+    position: relative;
+    letter-spacing: 1px;
+    padding: 5px 0;
+}
+header .list:hover {
+    background: #5c6177;
+    box-shadow: 0 0 10px lightgoldenrodyellow;
+}
+header .list .dropdown {
+    position: absolute;
+    top: -30px;
+    left: 65%;
+    display: none;
+}
+header .list .dropdown li {
+    width: max-content;
+    background: #5c6177;
+    box-shadow: 0 0 10px lightgoldenrodyellow;
+
+    border: 1px solid lightskyblue;
+}
+header ul li:hover .dropdown {
+    display: block;
+}
+main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+
+    background: url(../pictures/versus.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main i, h1 {
+    font-size: 42px;
+    color: red;
+}
+main .box {
+    padding: 100px 0;
+    width: 100%;
+    min-height: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+main .box .content {
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+    height: 400px;
+    margin: 20px 40px;
+    overflow: hidden;
+}
+main .box .content img {
+    height: 200px;
+    object-fit: cover;
+}
+.video {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../pictures/futuristic-symmetry-reflection-abstract-background-with-orange-blue-neon-lights.jpg);
+}
+.video .videoBx {
+    width: 100%;
+    min-height: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.video .videoBx .clip {
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+    height: 400px;
+    margin: 20px 40px;
+}

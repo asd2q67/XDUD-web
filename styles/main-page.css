@@ -244,7 +244,7 @@ header .action .searchBx input {
     background: lightskyblue;
 }
 
-.games .ul .button .active {
+.games .ul .button {
     background: lightskyblue;
     color: #23242a;
     box-shadow: 0 0 10px lightskyblue;
@@ -259,11 +259,6 @@ header .action .searchBx input {
     justify-content: center;
     align-items: center;
 }
-
-.hide {
-    display: none;
-
-  }
 
 .games .cardBx .card {
     width: 280px;
