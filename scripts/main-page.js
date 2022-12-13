@@ -1,5 +1,5 @@
 
-
+//filter
 function filterSelection(c) {
     console.log(c);
     var x,i;
@@ -46,14 +46,7 @@ function removeCard(element,name){
 //get the button
 let topBtn = document.getElementsByClassName("aButton");
 
-//show the button when user scroll down
-
-
-window.onscroll = function()
-{
-    console.log(document.documentElement.scrollTop)
-}
-
+//move page to chosen destination
 
 function toTop(){
     document.body.scrollTop = 0;
@@ -81,5 +74,3 @@ function toContact(){
 }
 
 
-
-//console.log(document.documentElement.scrollTop);
