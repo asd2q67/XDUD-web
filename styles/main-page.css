@@ -13,6 +13,8 @@ a, p, h4, h2, h3, h1 {
 body {
     background: #130849;
 }
+
+/* nav bar*/
 header {
     position: fixed;
     top: 0;
@@ -27,6 +29,24 @@ header {
 
     transition: 0.5s;
     z-index: 100;
+}
+
+header .dropDown li{
+    display: block;
+}
+
+header .dropDown{
+    position: absolute;
+    width: 10%;
+    background-color: lightskyblue;
+    z-index: 999;
+    display: none;
+    border-radius: 5%;
+
+}
+
+header li:hover ul.dropDown{
+    display: block  ;
 }
 .scroll-change {
     background: #2d3a87;

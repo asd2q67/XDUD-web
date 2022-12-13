@@ -6,16 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/main-page.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/ac0492a5c5.js" crossorigin="anonymous"></script>
     <script src="../scripts/main-page.js"></script>
     <title>Main page</title>
 </head>
 <body>
+
+    <!--Nav bar-->
     <header>
         <a href="#" class="logo">Tanoshi Games</a>
         <ul class="nav-bar">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Games</a></li>
+            <li>
+                <a class="dropDownBtn" href="#">Games <i class="fa fa-caret-down"></i> </a>
+                <ul class="dropDown">
+                    <li><a href="./cyberpunk.html">Cyberpunk</a></li>
+                    <li><a href="./fortnite.html">Fortnite</a></li>
+                </ul>
+            </li>
             <li><a href="#">Tournaments</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
@@ -26,7 +35,7 @@
             </div>
         </div>      
     </header> 
-    
+
     <!-- Home Banner -->
     <div class="banner">
         <div class="bg">
