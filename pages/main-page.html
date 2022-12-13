@@ -16,17 +16,22 @@
     <header>
         <a href="#" class="logo">TanoshiGame</a>
         <ul class="nav-bar">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <!--home-->
+            <li><a href="javascript:toTop()">Home</a></li>
+            <!--about-->
+            <li><a href="javascript:toAboutUs()">About</a></li>
+            <!--games-->
             <li>
-                <a class="dropDownBtn" href="#">Games <i class="fa fa-caret-down"></i> </a>
+                <a class="dropDownBtn" href="javascript:toGames()">Games <i class="fa fa-caret-down"></i> </a>
                 <ul class="dropDown">
                     <li><a href="./cyberpunk.html">Cyberpunk</a></li>
                     <li><a href="./fortnite.html">Fortnite</a></li>
                 </ul>
             </li>
-            <li><a href="./tournament.html">Tournaments</a></li>
-            <li><a href="#">Contact</a></li>
+            <!--tournament-->
+            <li><a href="javascript:toTournament()">Tournaments</a></li>
+            <!--contact-->
+            <li><a href="javascript:toContact()">Contact</a></li>
         </ul>
         <div class="action">
             <div class="searchBx">
@@ -230,5 +235,8 @@
             </div>
         </div>
     </div>
+
+        <!--to top button-->
+        <button onclick="toTop()" class="aButton" title="Go to top">To top</button> 
 </body>
 </html>
