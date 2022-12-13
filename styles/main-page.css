@@ -115,6 +115,8 @@ header .action .searchBx input {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-image: url(../pictures/cosmic-background-with-colorful-laser-lights.jpg);
 }
 .banner .bg {
     position: relative;
@@ -170,6 +172,8 @@ header .action .searchBx input {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-image: url(../pictures/about.jpg);
 }
 .about .contentBx {
     width: 50%;
@@ -212,6 +216,7 @@ header .action .searchBx input {
     flex-direction: column;
 
     margin: 40px auto;
+    background-image: url(../pictures/futuristic-symmetry-reflection-abstract-background-with-orange-blue-neon-lights.jpg);
 }
 .games h2 {
     margin: 10px 0;
@@ -374,6 +379,7 @@ header .action .searchBx input {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url(../pictures/versus.jpg);
 }
 .tournaments h2 {
     margin: 10px 0;
